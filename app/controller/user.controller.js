@@ -40,3 +40,10 @@ const updateModel = async (req, res) => {
   res.send({ data, status: "success", message: "Successfully updated a user" });
 };
 
+const deleteModelById = async (req, res) => {
+  const { id } = req.params;
+  const data = await service.deleteById(id);
+  res.send({ data, status: "success", message: "Successfully deleted a user" });
+};
+
+export { getAll, getModelById, addModel, updateModel, deleteModelById };
