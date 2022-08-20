@@ -11,3 +11,13 @@ const getAll = async (req, res) => {
   });
 };
 
+const getModelById = async (req, res) => {
+  const { id } = req.params;
+  const data = await service.getById(id);
+  res.send({
+    data: [data],
+    status: "success",
+    message: "Successfully retrieved user",
+  });
+};
+
