@@ -16,3 +16,8 @@ const update = async (id, body) => {
   return await model.findByIdAndUpdate({ _id: id }, body, { new: true });
 };
 
+const deleteById = async (id) => {
+  return await model.findByIdAndDelete({ _id: id });
+};
+
+export default { getAll, getById, add, update, deleteById };
