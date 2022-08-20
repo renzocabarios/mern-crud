@@ -12,3 +12,7 @@ const add = async (body) => {
   return await model.create(body);
 };
 
+const update = async (id, body) => {
+  return await model.findByIdAndUpdate({ _id: id }, body, { new: true });
+};
+
