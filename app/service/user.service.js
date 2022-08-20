@@ -8,3 +8,7 @@ const getById = async (id) => {
   return await model.findById({ _id: id });
 };
 
+const add = async (body) => {
+  return await model.create(body);
+};
+
