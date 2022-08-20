@@ -21,3 +21,15 @@ const getModelById = async (req, res) => {
   });
 };
 
+const addModel = async (req, res) => {
+  const { password, ...rest } = req.body;
+  const encrypted = await bcrypt.hash(password, ENV.HASH_SALT);
+  console.log({ password: encrypted, ...rest });
+  const data = await service.add({ password: encrypted, ...rest });
+  res.send({
+    data: [data],
+    status: "success",
+    message: "Successfully added a user",
+  });
+};
+
