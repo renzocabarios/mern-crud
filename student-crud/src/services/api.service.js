@@ -14,3 +14,6 @@ export function patch(uri, body) {
   return axios.patch(`${BASE_URL}${uri}`, body);
 }
 
+export function deleteById(uri) {
+  return axios.delete(`${BASE_URL}${uri}`);
+}
