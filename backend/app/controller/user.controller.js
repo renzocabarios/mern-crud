@@ -36,7 +36,7 @@ const addModel = async (req, res) => {
 const updateModel = async (req, res) => {
   const { id } = req.params;
   const { password, ...rest } = req.body;
-  const data = await service.update(id, { rest });
+  const data = await service.update(id, { ...rest });
   res.send({ data, status: "success", message: "Successfully updated a user" });
 };
 
