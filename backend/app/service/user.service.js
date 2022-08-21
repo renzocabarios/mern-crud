@@ -12,8 +12,8 @@ const add = async (body) => {
   return await model.create(body);
 };
 
-const update = async (id, body) => {
-  return await model.findByIdAndUpdate({ _id: id }, body, { new: true });
+const update = async (_id, body) => {
+  return await model.findByIdAndUpdate({ _id }, body, { new: true });
 };
 
 const deleteById = async (id) => {

@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+
+}
+
+nav{
+  background-color: #0096FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  line-height: 1.2rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  height: 10vh;
+}
+
+.views{
+  height: 90vh;
+}
+
+.view{
+  height: 100%;
+  width: 100%;
+}
+
+.add-view{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  width: 100%;
+  box-shadow: 0 0 1.1rem rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.styled-table thead tr {
+  background-color: #0096FF;
+  color: #ffffff;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 1.2rem;
+}
+
+.styled-table tbody tr {
+  border-bottom: 0.1rem solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #0096FF;
+}
+
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #0096FF;
+}
+
+input[type="submit"], button {
+  background-color: #0096FF;
+  color: white;
+  font-weight: 400;
+  font-size: 1.2rem;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.3rem;
+  transition: 0.2s;
+}
+
+input[type="submit"]:hover, button:hover {
+  background-color: #0026ff;
+}
+
+.form{
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.3rem;
+}
+
+.form-input{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+label {
+  font-size: 1rem;
+}
+
+input[type="text"], input[type="password"]  {
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  outline: none;
+  transition: 0.2s;
+}
+
+input:focus, input:hover {
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
