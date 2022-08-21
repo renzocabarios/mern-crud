@@ -10,3 +10,7 @@ export function post(uri, body) {
   return axios.post(`${BASE_URL}${uri}`, body);
 }
 
+export function patch(uri, body) {
+  return axios.patch(`${BASE_URL}${uri}`, body);
+}
+
