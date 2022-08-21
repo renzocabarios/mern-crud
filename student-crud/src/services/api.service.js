@@ -6,3 +6,7 @@ export function get(uri) {
   return axios.get(`${BASE_URL}${uri}`);
 }
 
+export function post(uri, body) {
+  return axios.post(`${BASE_URL}${uri}`, body);
+}
+
